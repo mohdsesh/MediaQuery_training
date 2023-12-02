@@ -189,7 +189,7 @@ body{
         max-width: 220px;
     }
     .menu__item{
-        margin-left: 0;
+        margin-left: 30px;
         margin-bottom: 20px;
     }
     .page-content{
@@ -207,7 +207,6 @@ body{
     }
     .main{
         margin-top: 20px;
-        text-align: center;
 
     }
 
@@ -218,5 +217,12 @@ body{
     .container{
         max-width: 100%;
         padding: 0 35px;
+    }
+    .page-content__title{
+         font-size: 56px;
+    }
+    .page-content__caption{
+        font-size: 20px;
+
     }
 }
