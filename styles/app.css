@@ -23,29 +23,15 @@ body{
     padding: 0 15px;
 }
 
-@media only screen and (max-whidt: 1200px) {
-    .container{
-        max-width: 960px;
-    }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-@media only screen and (max-whidt: 992px) {
-    .container{
-        max-width: 720px;
-    }
-}
 
-@media only screen and (max-whidt: 768px) {
-    .container{
-        max-width: 540px;
-    }
-}
 
-@media only screen and (max-whidt: 576px) {
-    .container{
-        max-width: 100%;
-    }
-}
+
 
 .header{
 
@@ -64,20 +50,23 @@ body{
 }
 
 .logo{
-
+    width: 150px;
 }
 
 .logo__img{
-    width: 150px;
+    width: 100%;
 }
 
 .menu{
     display: flex;
     align-items: center;
+    transition: left 0.3s ease-in-out;
 }
 
 .menu__item{
     margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .menu__link{
@@ -95,4 +84,120 @@ body{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     padding: 15px 25px;
+}
+
+.nav__icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.main{
+    margin-top: 40px;
+
+}
+.page{
+
+}
+.container{
+
+}
+.row{
+
+}
+.page-content{
+    width: 50%;
+
+}
+.page-content__title{
+    color: #160B38;
+    font-size: 70px;
+    position: relative;
+}
+.page-content__title::before{
+    content: " ";
+    position: absolute;
+    left: -22px;
+    top: -12px;
+    background: url("../images/Lines.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+}
+.page-content__caption{
+    color: #160B38;
+    font-family: "Jost-Medium";
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.page-content__link{
+    background-color: #8054f6;
+    color: #fff;
+    font-family: "Jost-Bold";
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    max-width: 146px;
+    text-align: center;
+}
+.page__banner{
+    width: 50%;
+}
+.page__img{
+    width: 100%;
+}
+
+
+
+
+
+
+@media only screen and (max-whidt: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-whidt: 992px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .nav__icon{
+        display: block;
+    }
+    .menu{
+        display: block;
+        position: fixed;
+        left: -220px;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 2;
+        padding: 25px;
+        max-width: 220px;
+    }
+    .menu__item{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (max-whidt: 576px) {
+    .container{
+        max-width: 100%;
+    }
 }
